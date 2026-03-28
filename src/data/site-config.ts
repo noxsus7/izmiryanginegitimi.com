@@ -28,7 +28,6 @@ export const navigation: NavItem[] = [
     ],
   },
   { label: 'Hakkımızda', href: '/hakkimizda' },
-  { label: 'Blog', href: '/blog' },
   { label: 'İletişim', href: '/iletisim' },
 ];
 

@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'KVKK Aydınlatma Metni | İzmir Yangın Eğitimi',
   description: 'İzmir Yangın Eğitimi 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) aydınlatma metni.',
   robots: { index: true, follow: true },
+  alternates: {
+    canonical: 'https://yanginegitimiizmir.com/kvkk-aydinlatma-metni',
+  },
 };
 
 const lastUpdated = '25 Mart 2026';

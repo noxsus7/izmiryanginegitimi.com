@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Çerez Politikası | İzmir Yangın Eğitimi',
   description: 'İzmir Yangın Eğitimi web sitesi çerez politikası ve kullanımı hakkında bilgilendirme.',
   robots: { index: true, follow: true },
+  alternates: {
+    canonical: 'https://yanginegitimiizmir.com/cerez-politikasi',
+  },
 };
 
 const lastUpdated = '25 Mart 2026';

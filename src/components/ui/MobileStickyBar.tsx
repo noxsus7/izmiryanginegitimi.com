@@ -1,8 +1,22 @@
 'use client';
 
+import { usePathname } from 'next/navigation';
 import { siteConfig } from '@/data/site-config';
 
 export default function MobileStickyBar() {
+  const pathname = usePathname();
+
+  const handleTeklifClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const formEl = document.getElementById('teklif-formu');
+    if (formEl) {
+      formEl.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // Form not on this page → redirect to iletisim
+      window.location.href = '/iletisim#teklif-formu';
+    }
+  };
+
   return (
     <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden">
       <div
@@ -10,15 +24,15 @@ export default function MobileStickyBar() {
         style={{ paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}
       >
         {/* Left: Teklif Al */}
-        <a
-          href="#teklif-formu"
+        <button
+          onClick={handleTeklifClick}
           className="flex-1 basis-1/2 flex items-center justify-center gap-2 bg-red-600 text-white py-4 font-bold text-sm active:bg-red-700 transition-colors duration-200 border-r border-white/20"
         >
           <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" /><path d="M14 2v4a2 2 0 0 0 2 2h4" /><path d="m9 15 2 2 4-4" />
           </svg>
           Ücretsiz Teklif Al
-        </a>
+        </button>
 
 
         {/* Right: Hemen Ara */}

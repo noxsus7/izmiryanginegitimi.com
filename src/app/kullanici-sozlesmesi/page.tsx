@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Kullanıcı Sözleşmesi | İzmir Yangın Eğitimi',
   description: 'İzmir Yangın Eğitimi kullanıcı sözleşmesi ve hizmet kullanım koşulları.',
   robots: { index: true, follow: true },
+  alternates: {
+    canonical: 'https://yanginegitimiizmir.com/kullanici-sozlesmesi',
+  },
 };
 
 const lastUpdated = '25 Mart 2026';

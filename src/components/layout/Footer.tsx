@@ -67,7 +67,6 @@ export default function Footer() {
               <ul className="space-y-2.5">
                 <li><Link href="/hakkimizda" className="text-slate-400 hover:text-white text-sm transition-colors">Hakkımızda</Link></li>
                 <li><Link href="/iletisim" className="text-slate-400 hover:text-white text-sm transition-colors">İletişim</Link></li>
-                <li><Link href="/blog" className="text-slate-400 hover:text-white text-sm transition-colors">Blog</Link></li>
               </ul>
             </div>
             <div className="mt-6 space-y-2.5">

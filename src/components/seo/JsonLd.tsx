@@ -1,5 +1,3 @@
-import { FAQ } from '@/types';
-
 interface JsonLdProps {
   data: Record<string, unknown> | Record<string, unknown>[];
 }
